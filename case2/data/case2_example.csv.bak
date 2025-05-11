@@ -1,0 +1,33 @@
+# Case 2 - 供应分配优化数据
+# 注意：这是CSV格式的示例数据 - 已修改
+
+# 总供应量表 (Table 1)
+week,total_supply
+Jan-Wk2,500
+Jan-Wk3,600
+Jan-Wk4,700
+Jan-Wk5,800
+
+# 实际生产量表 (Table 2)
+week,product,actual_build
+Jan-Wk1,Superman,70
+Jan-Wk1,Superman Plus,70
+Jan-Wk1,Superman Mini,60
+
+# 需求预测表 (Table 3)
+product,Jan-Wk2,Jan-Wk3,Jan-Wk4,Jan-Wk5
+Superman,85,100,110,120
+Superman Plus,85,120,150,175
+Superman Mini,40,60,70,75
+
+# 客户需求表 (Table 4)
+channel,region,Jan-Wk2,Jan-Wk3,Jan-Wk4,Jan-Wk5
+Online Store,AMR,20,25,30,35
+Online Store,Europe,5,10,15,15
+Online Store,PAC,25,30,35,40
+Retail Store,AMR,15,25,30,35
+Retail Store,Europe,5,10,15,15
+Retail Store,PAC,15,25,35,40
+Reseller Partners,AMR,20,25,30,35
+Reseller Partners,Europe,5,10,15,15
+Reseller Partners,PAC,25,30,35,40 
