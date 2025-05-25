@@ -156,7 +156,8 @@ def generate_sales_forecast(
             # 假设 unique_weeks 是有序的，取前 N 周
             # 注意：实际应用中，周的顺序和识别上市期需要更精确的定义
             # 这里简单地取排序后的前 N 周
-            sorted_weeks = sorted(unique_weeks) # 确保顺序，尽管 unique() 通常保留顺序
+            # sorted_weeks = sorted(unique_weeks) # 确保顺序，尽管 unique() 通常保留顺序
+            sorted_weeks = unique_weeks
             launch_period_weeks = sorted_weeks[:min(weeks_for_launch_impact, len(sorted_weeks))]
             launch_weeks_mask[launch_period_weeks] = True
         
